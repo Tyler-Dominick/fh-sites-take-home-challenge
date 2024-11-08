@@ -44,4 +44,15 @@ describe('Rank A Flush', function() {
   });
 });
 
+/**
+ * test
+ */
+describe('Rank A Straight', function() {
+  var hand = new PokerHand('Kd Qh Jd 10h 9s');
+
+  it('Return straight when hand given', function() {
+    assert.equal(hand.getRank(), 'Straight');
+  });
+});
+
 // More tests go here
